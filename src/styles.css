@@ -1,0 +1,108 @@
+#typeform-embed-container {
+  top: 40%;
+  right: 0;
+  position: fixed;
+}
+#typeform-embed-container .main-button {
+  z-index: 2;
+  background: #2c2c2c;
+  height: 118px;
+  border-radius: 4px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  opacity: 100;
+  transition: all 250ms ease-out;
+  position: relative;
+  cursor: pointer;
+}
+
+#typeform-embed-container .main-button:hover {
+  padding: 0 1px;
+  box-shadow: 0 0 35px 2px rgba(0, 0, 0, 0.24);
+}
+
+#typeform-embed-container .main-button img {
+  width: 30px;
+  height: 30px;
+  margin-left: 4px;
+}
+
+#typeform-embed-container .main-button .title {
+  transform: rotate(180deg);
+  writing-mode: vertical-lr;
+  display: block;
+  padding: 10px;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+#typeform-embed-container.active .main-button {
+  opacity: 0;
+}
+
+#typeform-embed-container .form {
+  transition: all 250ms ease-out;
+  opacity: 0;
+  width: 400px;
+  height: 400px;
+  position: fixed;
+  right: -400;
+  top: 40%;
+  border-radius: 2px;
+}
+
+#typeform-embed-container.active .form {
+  opacity: 100;
+  transform: translateX(-110%);
+}
+
+#typeform-embed-container .form .close {
+  padding: 5px 10px;
+  background: rgb(51, 51, 51);
+  color: white;
+  position: absolute;
+  top: -14px;
+  right: 15px;
+  border-radius: 50%;
+  z-index: 2;
+  display: block;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 980px) {
+  body {
+    background-color: lightblue;
+  }
+  #typeform-embed-container .main-button {
+    height: 218px;
+  }
+
+  #typeform-embed-container .main-button .title {
+    font-size: 24px;
+    padding: 20px;
+  }
+  #typeform-embed-container .main-button .logo {
+    position: absolute;
+    right: 7px;
+    bottom: 20px;
+    width: 45px;
+    height: 45px;
+  }
+  #typeform-embed-container .main-button .logo svg {
+    transform: scale(1.5) !important;
+  }
+  #typeform-embed-container .form {
+    width: 80%;
+    height: 50%;
+  }
+  #typeform-embed-container.active .form {
+    transform: translateX(-64%);
+  }
+
+  #typeform-embed-container.active .form .close {
+    font-size: 24px;
+    padding: 12px 20px;
+    top: -28px;
+  }
+}
