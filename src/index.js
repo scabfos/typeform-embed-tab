@@ -12,7 +12,7 @@ var TYPEFORM_FEEDBACK =
       #typeform-embed-container .main-button {
         z-index: 2;
         background: #2c2c2c;
-        height: 118px;
+        min-height: 118px;
         border-radius: 4px;
         border-top-right-radius: 0px;
         border-bottom-right-radius: 0px;
@@ -78,12 +78,12 @@ var TYPEFORM_FEEDBACK =
       
       @media only screen and (max-width: 980px) {
         #typeform-embed-container .main-button {
-          height: 218px;
+          min-height: 218px;
         }
       
         #typeform-embed-container .main-button .title {
           font-size: 24px;
-          padding: 20px;
+          padding: 90px 20px 20px;
         }
         #typeform-embed-container .main-button .logo {
           position: absolute;

@@ -1,15 +1,13 @@
 # typeform-embed-feedback
 
-Adding CSS in JS example (Avoid css file delivery overhead):
+Just include the following script at your page to embed it:
 
 ```
-var css = `body {
-    color: red;
-    font-size: 30px;
-  }`;
-
-var style = document.createElement("style");
-style.type = "text/css";
-style.appendChild(document.createTextNode(css));
-document.head.appendChild(style);
+<script src="./index.min.js"></script>
+<script type="text/javascript">
+  TYPEFORM_FEEDBACK.init({
+    url: {URL_TO_YOUR_FORM_HERE},
+    title: 'Feedback',
+  })
+</script>
 ```
