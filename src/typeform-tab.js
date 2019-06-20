@@ -1,5 +1,5 @@
-var TYPEFORM_FEEDBACK =
-  TYPEFORM_FEEDBACK ||
+var TYPEFORM_TAB =
+  TYPEFORM_TAB ||
   (function() {
     var _args = {} // private
 
